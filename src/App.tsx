@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -7,7 +6,7 @@ import { Products } from './pages/Products';
 import { Cart } from './pages/Cart';
 import { Wishlist } from './pages/Wishlist';
 import { About } from './pages/About';
-import { AIAssistant } from './components/AIAssistant';
+import { Chatbot } from './components/Chatbot';
 
 function App() {
   return (
@@ -22,8 +21,8 @@ function App() {
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/about" element={<About />} />
           </Routes>
+          <Chatbot />
         </main>
-        <AIAssistant />
         <Footer />
       </div>
     </Router>

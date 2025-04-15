@@ -1,4 +1,3 @@
-import React from 'react';
 import { Heart, ShoppingCart } from 'lucide-react';
 import { Product } from '../types';
 import { useStore } from '../store/useStore';
@@ -7,7 +6,7 @@ interface ProductCardProps {
   product: Product;
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+export const ProductCard = ({ product }: ProductCardProps) => {
   const { addToCart, addToWishlist } = useStore();
 
   return (
